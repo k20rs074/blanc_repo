@@ -21,6 +21,8 @@
     <script src="js/keys.js"></script>
     <script src="js/tapGame.js"></script>
     <script src="js/ranking.js"></script>
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- ゲーム画面 -->
@@ -29,19 +31,27 @@
             <h1></h1>
                 <!--<a href="#ranking-page" id="ranking" class="ui-btn-right" onclick="toRanking()">ランキングを見る</a>-->
         </div>
+         
+      
+    
+  
         <div data-role="content">
             <form name="gameForm">
-                <input type="button" value="ランキングを見る" name="ranking" onclick="toRanking()" />
+                <input type="button" value="記録を見る" name="ranking" onclick="toRanking()" />
                 <center>
-                    <h1>連打アプリ</h1>
+                    <h1>ストップウォッチ</h1>
                 </center>
-                <div align="right">
-                    <font size="6"><strong>0</strong></font>
-                </div>
+                <div class="container">
+                <div id="timer">00:00.000</div>
                 <center>
-                    <img src="mato.png" width="250" height="250" alt="mato" onClick="tapCount()"><br/><br/>
-                    <p>↓スタートボタンを押してゲームスタート↓</p>
-                    <input type="button" value="Start" name="start" onclick="startGame()"/>
+                    <!--<img src="mato.png" width="250" height="250" alt="mato" onClick="tapCount()"><br/><br/>-->
+                    <div class="controls">
+                    <div id="start" class="btn">Start</div>
+                    <div id="stop" class="btn">Stop</div>
+                    <div id="reset" class="btn">Reset</div>
+                    </div>
+                    </div>
+                     <script src="js/main.js"></script>
                 </center>
             </form>
         </div>           
